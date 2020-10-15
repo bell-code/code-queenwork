@@ -1,0 +1,17 @@
+body{
+    background-color:coral;
+}
+img{
+    width:400px;
+    border-style:double;
+}
+h1{
+    color:purple;
+    font-family:ariel;
+}
+a:hover{
+    background-color:white;
+}
+h1{
+    text-align:center;
+}
