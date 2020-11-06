@@ -87,7 +87,7 @@ const students = [
     },
   ];
   $.each(students, function(i) {
-    var templateString = '<article class="card"><h2>' + students[i].name + '</h2><p>' + students[i].id + '</p><p>' + students[i].age + students[i].subjects + '</p></article>';
+    var templateString = '<article class="card"><h2>' + students[i].name + '</h2><p>' + students[i].id + '</p><p>' + students[i].age + '</p></article>';
     $('#display').append(templateString);
   })
   });
