@@ -1,32 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./studentcrds.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>Student Report Card</title>
 </head>
 <body>
-    <div class="container">
-        <h1>Student List</h1>
-        <div class="row" id="stdrow">
-            <div class="column">
-              <div class="card">..</div>
-            </div>
-            <div class="column">
-              <div class="card">..</div>
-            </div>
-            <div class="column">
-              <div class="card">..</div>
-            </div>
-            <div class="column">
-              <div class="card">..</div>
-            </div>
-          </div>
-    </div>
+
+  <h1>Student List</h1>
+  <main class="cards">
+    <div id="display"></div>
+  </main> 
+
 </body>
 <script>
-   
+  $(document).ready(function() { 
 const students = [
     {
       id: 1,
@@ -97,9 +86,10 @@ const students = [
       ],
     },
   ];
-  
-  for (let student of students) {
-      $(".card").append(students)
-  }
+  $.each(students, function(i) {
+    var templateString = '<article class="card"><h2>' + students[i].name + '</h2><p>' + students[i].id + '</p><p>' + students[i].age + students[i].subjects + '</p></article>';
+    $('#display').append(templateString);
+  })
+  });
   </script>
 </html>
