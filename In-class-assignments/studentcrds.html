@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./studentcrds.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Student Report Card</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Student List</h1>
+        <div class="row" id="stdrow">
+            <div class="column">
+              <div class="card">..</div>
+            </div>
+            <div class="column">
+              <div class="card">..</div>
+            </div>
+            <div class="column">
+              <div class="card">..</div>
+            </div>
+            <div class="column">
+              <div class="card">..</div>
+            </div>
+          </div>
+    </div>
+</body>
+<script>
+   
+const students = [
+    {
+      id: 1,
+      name: "Mark Alonso",
+      age: 18,
+      subjects: [
+        {
+          id: 1,
+          name: "Math",
+          score: 60,
+        },
+        {
+          id: 2,
+          name: "English",
+          score: 85,
+        },
+      ],
+    },
+    {
+      id: 2,
+      name: "Paul Ryan",
+      age: 19,
+      subjects: [
+        {
+          id: 1,
+          name: "Math",
+          score: 78,
+        },
+        {
+          id: 2,
+          name: "English",
+          score: 75,
+        },
+      ],
+    },
+    {
+      id: 3,
+      name: "Jackie Anite",
+      age: 21,
+      subjects: [
+        {
+          id: 1,
+          name: "Math",
+          score: 90,
+        },
+        {
+          id: 2,
+          name: "English",
+          score: 80,
+        },
+      ],
+    },
+    {
+      id: 4,
+      name: "Anita Allain",
+      age: 18,
+      subjects: [
+        {
+          id: 1,
+          name: "Math",
+          score: 71,
+        },
+        {
+          id: 2,
+          name: "English",
+          score: 45,
+        },
+      ],
+    },
+  ];
+  
+  for (let student of students) {
+      $(".card").append(students)
+  }
+  </script>
+</html>

@@ -1,0 +1,48 @@
+.main{
+    text-align: center;
+    padding-top: 50px;
+    font-family: 'Roboto Condensed', sans-serif;
+    
+    
+}
+.result{
+    border-radius: 5px;
+     width:250px ;
+    height:30px ;
+    padding-left: 10px;
+    border:2px solid #dddfe2;
+}
+.button{
+    padding-top: 15px;
+   
+}
+.input{
+    background-color: dodgerblue;
+    color: white;
+    border-radius: 5px;
+    width:100px ;
+    height:25px ;
+    border: none;
+}
+.remove{
+    background-color: dodgerblue;
+    color: white;
+    border-radius: 5px;
+    width:100px ;
+    height:25px ;
+    border: none;  
+}
+body{
+    background-color: slategray;
+}
+.button-sec{
+    padding-top: 50px;
+}
+.main h1{
+    color: yellow;
+}
+.display{
+    padding-top:50px ;
+    font-size: 50px;
+    font-weight: bold;
+}
